@@ -1,0 +1,23 @@
+some:
+  hello: Test
+
+spring:
+  application:
+    name: kubernetes-test
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
+      reload:
+        enabled: true
+  rabbitmq:
+    host: hello-world
+    port: 5672
+    username: user
+    password: user
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
